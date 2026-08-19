@@ -1,0 +1,18 @@
+ESP32 PIN CONFIGURATION
+
+GPIO 27 - Flow sensor pulse output
+GPIO 26 - Leak sensor digital output
+GPIO 25 - IR sensor / push-button trigger
+GPIO 33 - Relay control for pump
+GPIO 32 - Buzzer
+GPIO 21 - I2C SDA for OLED
+GPIO 22 - I2C SCL for OLED
+
+Power:
+- 12V adapter -> pump/relay power path
+- LM2596 buck converter -> regulated low-voltage supply as required
+- ESP32 and sensors must use appropriate regulated voltage levels.
+
+IMPORTANT:
+Verify the voltage/current requirements of every module before connecting hardware.
+Never connect a 12V signal directly to an ESP32 GPIO.
